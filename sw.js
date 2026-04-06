@@ -16,7 +16,6 @@ self.addEventListener("install", event => {
   self.skipWaiting(); // activa la nueva versión inmediatamente
 });
 
-// Activar y limpiar cachés viejas
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys => {
@@ -25,8 +24,9 @@ self.addEventListener("activate", event => {
       );
     })
   );
-  self.clients.claim(); // toma control de todas las pestañas
+  self.clients.claim();
 });
+
 
 // Estrategias de caché
 self.addEventListener("fetch", event => {

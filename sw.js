@@ -1,21 +1,20 @@
-const CACHE_NAME = "electroshop-cache-v1";
+const CACHE_NAME = "electroshop-cache-v2";
 const urlsToCache = [
   "/",
   "/index.html",
   "/afiliados.html",
   "/planes.html",
-  "/offline.html",
-  "/imagenes/icono.png"
+  "/offline.html"
 ];
 
-// Instalar y guardar en caché
+// Instalar y cachear lo bÃ¡sico
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
   );
 });
 
-// Activar y limpiar cachés viejos
+// Activar y limpiar cachÃ©s viejos
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys => {
@@ -26,13 +25,22 @@ self.addEventListener("activate", event => {
   );
 });
 
-// Interceptar peticiones
+// Interceptar peticiones y cachear dinÃ¡micamente
 self.addEventListener("fetch", event => {
   event.respondWith(
-    fetch(event.request).catch(() => {
-      return caches.match(event.request).then(response => {
-        return response || caches.match("/offline.html");
-      });
-    })
+    fetch(event.request)
+      .then(response => {
+        const responseClone = response.clone();
+        caches.open(CACHE_NAME).then(cache => {
+          cache.put(event.request, responseClone);
+        });
+        return response;
+      })
+      .catch(() => {
+        return caches.match(event.request).then(response => {
+          return response || caches.match("/offline.html");
+        });
+      })
   );
 });
+

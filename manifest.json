@@ -7,12 +7,12 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/electroshop48228/imagenes/icono-192.png",
+      "src": "/electroshop48228/imagenes/icono1.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/electroshop48228/imagenes/icono-512.png",
+      "src": "/electroshop48228/imagenes/icono2.png",
       "sizes": "512x512",
       "type": "image/png"
     }

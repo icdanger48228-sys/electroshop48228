@@ -82,7 +82,13 @@ self.addEventListener("fetch", event => {
   event.respondWith(
     fetch(request).catch(() => caches.match(request))
   );
+
+  //agregado
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+  window.location.reload();
 });
+
+
 
 
 

@@ -1,16 +1,20 @@
-const CACHE_NAME = "electroshop-cache-v1";
+const CACHE_NAME = "electroshop-cache-v2";
 const urlsToCache = [
   "/electroshop48228/",
   "/electroshop48228/index.html",
-  "/electroshop48228/offline.html"
+  "/electroshop48228/offline.html",
+  "/electroshop48228/afiliados.html",
+  "/electroshop48228/planes.html"
 ];
 
+// Instalar y cachear lo básico
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
   );
 });
 
+// Activar y limpiar cachés viejos
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys => {
@@ -21,6 +25,7 @@ self.addEventListener("activate", event => {
   );
 });
 
+// Interceptar peticiones y cachear dinámicamente
 self.addEventListener("fetch", event => {
   event.respondWith(
     fetch(event.request)
@@ -38,5 +43,6 @@ self.addEventListener("fetch", event => {
       })
   );
 });
+
 
 

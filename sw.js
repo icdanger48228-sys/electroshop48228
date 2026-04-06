@@ -8,6 +8,18 @@ const urlsToCache = [
   "/electroshop48228/style.css"
 ];
 
+//agregado
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js")
+    .then(registration => {
+      console.log("Service Worker registrado con éxito:", registration);
+    })
+    .catch(error => {
+      console.log("Error al registrar el Service Worker:", error);
+    });
+}
+
+
 // Instalar y cachear lo básico
 self.addEventListener("install", event => {
   event.waitUntil(

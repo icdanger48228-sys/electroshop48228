@@ -1,4 +1,4 @@
-const CACHE_NAME = "electroshop-cache-v3";
+const CACHE_NAME = "electroshop-cache-" + new Date().getTime();
 const urlsToCache = [
   "/electroshop48228/",
   "/electroshop48228/index.html",

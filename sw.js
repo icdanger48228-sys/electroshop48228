@@ -5,14 +5,12 @@ const urlsToCache = [
   "/electroshop48228/offline.html"
 ];
 
-// Instalar y cachear lo básico
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
   );
 });
 
-// Activar y limpiar cachés viejos
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys => {
@@ -23,7 +21,6 @@ self.addEventListener("activate", event => {
   );
 });
 
-// Interceptar peticiones y cachear dinámicamente
 self.addEventListener("fetch", event => {
   event.respondWith(
     fetch(event.request)
@@ -41,4 +38,5 @@ self.addEventListener("fetch", event => {
       })
   );
 });
+
 

@@ -1,18 +1,18 @@
 const CACHE_NAME = "electroshop-cache-v1";
 const urlsToCache = [
-  "/",
-  "/index.html",
-  "/offline.html"
+  "/electroshop48228/",
+  "/electroshop48228/index.html",
+  "/electroshop48228/offline.html"
 ];
 
-// Instalar y cachear lo básico
+// Instalar y cachear lo bÃ¡sico
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
   );
 });
 
-// Activar y limpiar cachés viejos
+// Activar y limpiar cachÃ©s viejos
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys => {
@@ -23,7 +23,7 @@ self.addEventListener("activate", event => {
   );
 });
 
-// Interceptar peticiones y cachear dinámicamente
+// Interceptar peticiones y cachear dinÃ¡micamente
 self.addEventListener("fetch", event => {
   event.respondWith(
     fetch(event.request)
@@ -36,8 +36,9 @@ self.addEventListener("fetch", event => {
       })
       .catch(() => {
         return caches.match(event.request).then(response => {
-          return response || caches.match("/offline.html");
+          return response || caches.match("/electroshop48228/offline.html");
         });
       })
   );
 });
+

@@ -1,4 +1,6 @@
+// Nombre de caché dinámico: cambia en cada despliegue
 const CACHE_NAME = "electroshop-cache-" + new Date().getTime();
+
 const urlsToCache = [
   "/electroshop48228/",
   "/electroshop48228/index.html",
@@ -16,6 +18,7 @@ self.addEventListener("install", event => {
   self.skipWaiting(); // activa la nueva versión inmediatamente
 });
 
+// Activar y limpiar cachés viejas
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys => {
@@ -24,9 +27,8 @@ self.addEventListener("activate", event => {
       );
     })
   );
-  self.clients.claim();
+  self.clients.claim(); // toma control de todas las pestañas
 });
-
 
 // Estrategias de caché
 self.addEventListener("fetch", event => {
@@ -73,6 +75,7 @@ self.addEventListener("fetch", event => {
     fetch(request).catch(() => caches.match(request))
   );
 });
+
 
 
 

@@ -2263,22 +2263,23 @@ updateNotifBadge();
 document.getElementById('heroVisitCount').textContent=getVisitsToday();
 </script>
 
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/electroshop48228/sw.js")
-        .then(reg => {
-          console.log("Service Worker registrado con éxito:", reg);
-        })
-        .catch(err => {
-          console.error("Error al registrar el Service Worker:", err);
-        });
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/electroshop48228/sw.js")
+    .then(registration => {
+      console.log("Service Worker registrado con éxito:", registration);
+    })
+    .catch(error => {
+      console.error("Error al registrar el Service Worker:", error);
+    });
 
-      // Recargar automáticamente cuando haya nueva versión
-      navigator.serviceWorker.addEventListener("controllerchange", () => {
-        window.location.reload();
-      });
-    }
-  </script>
+  // Recargar automáticamente cuando haya nueva versión
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    window.location.reload();
+  });
+}
+</script>
+
   
 </body>
 </html>

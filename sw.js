@@ -8,26 +8,15 @@ const urlsToCache = [
   "/electroshop48228/style.css"
 ];
 
-//agregado
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/electroshop48228/sw.js")
-    .then(registration => {
-      console.log("Service Worker registrado con éxito:", registration);
-    })
-    .catch(error => {
-      console.log("Error al registrar el Service Worker:", error);
-    });
-}
-
-
 // Instalar y cachear lo básico
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
   );
+  self.skipWaiting(); // activa la nueva versión inmediatamente
 });
 
-// Activar y limpiar cachés viejos
+// Activar y limpiar cachés viejas
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys => {
@@ -36,13 +25,14 @@ self.addEventListener("activate", event => {
       );
     })
   );
+  self.clients.claim(); // toma control de todas las pestañas
 });
 
 // Estrategias de caché
 self.addEventListener("fetch", event => {
   const request = event.request;
 
-  // Estrategia "cache first" para recursos estáticos (CSS, imágenes, JS)
+  // Estrategia "cache first" para recursos estáticos
   if (request.destination === "style" ||
       request.destination === "image" ||
       request.destination === "script") {
@@ -82,10 +72,6 @@ self.addEventListener("fetch", event => {
   event.respondWith(
     fetch(request).catch(() => caches.match(request))
   );
-
-  //agregado
-  navigator.serviceWorker.addEventListener("controllerchange", () => {
-  window.location.reload();
 });
 
 

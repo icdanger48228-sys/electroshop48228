@@ -34,32 +34,15 @@ self.addEventListener("activate", event => {
 self.addEventListener("fetch", event => {
   const request = event.request;
 
-  // Estrategia "cache first" para recursos estáticos
-  if (request.destination === "style" ||
-      request.destination === "image" ||
-      request.destination === "script") {
-    event.respondWith(
-      caches.match(request).then(response => {
-        return response || fetch(request).then(networkResponse => {
-          caches.open(CACHE_NAME).then(cache => {
-            cache.put(request, networkResponse.clone());
-          });
-          return networkResponse;
-        });
-      })
-    );
-    return;
-  }
-
-  // Estrategia "network first" para páginas HTML
   if (request.destination === "document") {
     event.respondWith(
       fetch(request)
         .then(networkResponse => {
+          const responseClone = networkResponse.clone(); // 👈 clonar aquí
           caches.open(CACHE_NAME).then(cache => {
-            cache.put(request, networkResponse.clone());
+            cache.put(request, responseClone);
           });
-          return networkResponse;
+          return networkResponse; // devolver el original
         })
         .catch(() => {
           return caches.match(request).then(response => {
@@ -70,11 +53,29 @@ self.addEventListener("fetch", event => {
     return;
   }
 
-  // Fallback general
+  if (request.destination === "style" ||
+      request.destination === "image" ||
+      request.destination === "script") {
+    event.respondWith(
+      caches.match(request).then(response => {
+        if (response) return response;
+        return fetch(request).then(networkResponse => {
+          const responseClone = networkResponse.clone(); // 👈 clonar aquí
+          caches.open(CACHE_NAME).then(cache => {
+            cache.put(request, responseClone);
+          });
+          return networkResponse;
+        });
+      })
+    );
+    return;
+  }
+
   event.respondWith(
     fetch(request).catch(() => caches.match(request))
   );
 });
+
 
 
 

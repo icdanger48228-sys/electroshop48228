@@ -6,8 +6,8 @@ const urlsToCache = [
   "/electroshop48228/index.html",
   "/electroshop48228/offline.html",
   "/electroshop48228/afiliados.html",
-  "/electroshop48228/planes.html",
-  "/electroshop48228/style.css"
+  "/electroshop48228/planes.html"
+
 ];
 
 // Instalar y cachear lo básico

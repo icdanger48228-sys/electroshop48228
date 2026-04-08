@@ -2,16 +2,17 @@
 <html lang="es">
 <head>
 
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <title>ElectroShopSuperman</title>
-  <!-- Aquí va tu manifest -->
+<meta charset="UTF-8">
+  <title>ElectroShop</title>
+
+  <!-- Manifest con ruta absoluta -->
   <link rel="manifest" href="/electroshop48228/manifest.json">
+  <meta name="theme-color" content="#000000">
 
-
-
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 <meta name="theme-color" content="#050508">
+<title>MegaTienda Online</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -2262,23 +2263,12 @@ document.getElementById('heroVisitCount').textContent=getVisitsToday();
 </script>
 
 <script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/electroshop48228/sw.js")
-    .then(registration => {
-      console.log("Service Worker registrado con éxito:", registration);
-    })
-    .catch(error => {
-      console.error("Error al registrar el Service Worker:", error);
-    });
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/electroshop48228/sw.js")
+        .then(() => console.log("Service Worker registrado"))
+        .catch(err => console.error("Error al registrar SW:", err));
+    }
+  </script>
 
-  // Recargar automáticamente cuando haya nueva versión
-  navigator.serviceWorker.addEventListener("controllerchange", () => {
-    window.location.reload();
-  });
-}
-</script>
-
-
-  
 </body>
 </html>

@@ -1,0 +1,518 @@
+{
+  "products": [
+    {
+      "id": "490715c2-1c0e-4169-a55a-956dc6dd30aa",
+      "name": "Motorina Electrica",
+      "price": 1200,
+      "currency": "",
+      "category": "Piezas de Motorinas Electricas",
+      "condition": "nuevo",
+      "stock": 6,
+      "minStock": 5,
+      "description": "Hace mas de 5 km por carga. Todas las funcionalidades en perfecto estado",
+      "images": [
+        "Imagenes/motorina.png"
+      ],
+      "originalPrice": 1300,
+      "bulkDiscount": 10,
+      "bulkQty": 3,
+      "featured": "si",
+      "views": 1,
+      "cartAdds": 1,
+      "sales": 0,
+      "lastSaleDate": null,
+      "createdAt": "2026-04-01T00:47:32.742Z"
+    },
+    {
+      "id": "7f18565e-acf9-4b05-a992-2eb2336c143a",
+      "name": "Telefono Celular Huawei Nova 5T",
+      "price": 45000,
+      "currency": "",
+      "category": "Telefonos",
+      "condition": "nuevo",
+      "stock": 5,
+      "minStock": 5,
+      "description": "Huawei Nova 5T de 6 de Ram y 128 de Almacenamiento. 50 px Camara trasera y 13 px  de Camara delantera. Sistema de Carga Rápida",
+      "images": [
+        "imagenes/telefono1.jpg",
+        "imagenes/telefono2.jpg"
+      ],
+      "originalPrice": 50000,
+      "bulkDiscount": 10,
+      "bulkQty": 3,
+      "featured": "no",
+      "views": 3,
+      "cartAdds": 0,
+      "sales": 0,
+      "lastSaleDate": null,
+      "createdAt": "2026-04-03T00:58:02.702Z"
+    },
+    {
+      "id": "bfc292b0-fc78-464d-bd07-92c4a0a97ea6",
+      "name": "Cargador de Motorina Eléctrica 72V/5A",
+      "price": 15000,
+      "currency": "",
+      "category": "Piezas de Motorinas Electricas",
+      "condition": "nuevo",
+      "stock": 2,
+      "minStock": 5,
+      "description": "Cargador para cargar cualquier tipo de motorina electrica  de 72v",
+      "images": [
+        "imagenes/cargador.jpg"
+      ],
+      "originalPrice": 16500,
+      "bulkDiscount": 10,
+      "bulkQty": 3,
+      "featured": "no",
+      "views": 0,
+      "cartAdds": 0,
+      "sales": 0,
+      "lastSaleDate": null,
+      "createdAt": "2026-04-03T01:03:38.059Z"
+    },
+    {
+      "id": "a2ad298e-f3d5-4800-9a04-e63539fcad93",
+      "name": "Placa de Telefono Samsung-A326U 5G",
+      "price": 7500,
+      "currency": "",
+      "category": "Telefonos",
+      "condition": "nuevo",
+      "stock": 6,
+      "minStock": 5,
+      "description": "Placa nueva para Telefono Samsung A326U. Coje todas las redes, NFC, Carga Rapida, Bluetooth, Wifi",
+      "images": [
+        "Imagenes/placa32.jpg",
+        "Imagenes/placa321.jpg"
+      ],
+      "originalPrice": 8000,
+      "bulkDiscount": 10,
+      "bulkQty": 3,
+      "featured": "no",
+      "views": 2,
+      "cartAdds": 1,
+      "sales": 0,
+      "lastSaleDate": null,
+      "createdAt": "2026-04-03T01:07:23.302Z"
+    },
+    {
+      "id": "d8f86129-4b55-4f9e-80c9-5a508fc8d149",
+      "name": "Telefono Celular Realme Note 50  8/128",
+      "price": 40000,
+      "currency": "CUP",
+      "category": "Telefonos",
+      "condition": "nuevo",
+      "stock": 0,
+      "minStock": 5,
+      "description": "TelefonoCelular Relme Note 50 de 8 de ram con 128 de almacenamiento. Coje todas las redes.  Permite carga rápida. Camara de 48 px delantera y 13 px trasera",
+      "images": [
+        "Imagenes/note501.png",
+        "Imagenes/note50.jpg"
+      ],
+      "originalPrice": 45000,
+      "bulkDiscount": 12,
+      "bulkQty": 3,
+      "featured": "no",
+      "views": 1,
+      "cartAdds": 0,
+      "sales": 0,
+      "lastSaleDate": null,
+      "createdAt": "2026-04-03T01:14:07.058Z"
+    },
+    {
+      "id": "46d15b13-4708-4b9e-846d-93a495fea945",
+      "name": "Telefono Celular Redmi A1+  4/64",
+      "price": 25000,
+      "currency": "CUP",
+      "category": "Telefonos",
+      "condition": "nuevo",
+      "stock": 2,
+      "minStock": 5,
+      "description": "Telefono Redmi A1+ de 4 de ram con 64 de almacenamiento. Coje todas las redes. Permite carga  rápida. NFC",
+      "images": [
+        "Imagenes/a1.png",
+        "Imagenes/a11.png"
+      ],
+      "originalPrice": 26500,
+      "bulkDiscount": 10,
+      "bulkQty": 3,
+      "featured": "si",
+      "views": 1,
+      "cartAdds": 1,
+      "sales": 0,
+      "lastSaleDate": null,
+      "createdAt": "2026-04-03T01:18:17.192Z"
+    },
+    {
+      "id": "e706db2e-e0c0-4325-9c58-ca9d6ecf4227",
+      "name": "Pantallas Para Teléfono Celulares",
+      "price": 10000,
+      "currency": "CUP",
+      "category": "Telefonos",
+      "condition": "nuevo",
+      "stock": 6,
+      "minStock": 5,
+      "description": "La pantalla de Teléfonos Celulares varian sus precios en dependencia del modelo de celular",
+      "images": [
+        "Imagenes/pantalla.png",
+        "Imagenes/pantalla1.png",
+        "Imagenes/pantalla2.png"
+      ],
+      "originalPrice": 12000,
+      "bulkDiscount": 5,
+      "bulkQty": 3,
+      "featured": "si",
+      "views": 0,
+      "cartAdds": 0,
+      "sales": 0,
+      "lastSaleDate": null,
+      "createdAt": "2026-04-03T01:24:06.668Z"
+    },
+    {
+      "id": "29f4da49-8c64-405d-84a6-43d15e0c8d09",
+      "name": "Botones para Telefono Celulares  Unanclaje/DobleAnclaje",
+      "price": 150,
+      "currency": "CUP",
+      "category": "Telefonos",
+      "condition": "nuevo",
+      "stock": 7,
+      "minStock": 5,
+      "description": "Botoneras para cualquier tipo de telefono celular. Buena Resistencia al contacto",
+      "images": [
+        "Imagenes/botones1.png",
+        "Imagenes/botones.png"
+      ],
+      "originalPrice": 200,
+      "bulkDiscount": 5,
+      "bulkQty": 3,
+      "featured": "no",
+      "views": 0,
+      "cartAdds": 1,
+      "sales": 1,
+      "lastSaleDate": "2026-04-07T15:26:07.474Z",
+      "createdAt": "2026-04-03T01:32:40.435Z"
+    },
+    {
+      "id": "dc7159c4-0a64-4461-bc05-f24c43391d0b",
+      "name": "Puertos de Telefonos Tipo B",
+      "price": 150,
+      "currency": "CUP",
+      "category": "Telefonos",
+      "condition": "nuevo",
+      "stock": 20,
+      "minStock": 5,
+      "description": "Puertos Tipo B para Telefonos Celulares. Buena resistencia y durabilidad",
+      "images": [
+        "Imagenes/puertos.png"
+      ],
+      "originalPrice": 200,
+      "bulkDiscount": 5,
+      "bulkQty": 3,
+      "featured": "si",
+      "views": 1,
+      "cartAdds": 1,
+      "sales": 0,
+      "lastSaleDate": null,
+      "createdAt": "2026-04-03T01:36:13.898Z"
+    },
+    {
+      "id": "5e7c096e-f621-483c-b2b1-d640253225ba",
+      "name": "Fuente ATX de 850 Watt",
+      "price": 15000,
+      "currency": "",
+      "category": "PiezasPC",
+      "condition": "nuevo",
+      "stock": 7,
+      "minStock": 5,
+      "description": "Fuente ATX para Computadoras de Mesa. Buena Precision, proteccion con sobre voltaje, sobre corriente, inversion de polaridad. Maneja buena corriente sin retardo",
+      "images": [
+        "Imagenes/fuentepc1.jpg",
+        "Imagenes/fuentepc2.jpg"
+      ],
+      "originalPrice": 20000,
+      "bulkDiscount": 10,
+      "bulkQty": 3,
+      "featured": "si",
+      "views": 0,
+      "cartAdds": 0,
+      "sales": 0,
+      "lastSaleDate": null,
+      "createdAt": "2026-04-03T01:42:58.813Z"
+    },
+    {
+      "id": "02b62680-544a-4eb8-bbbc-d2ba9ea2d0e0",
+      "name": "Teléfono Celular Redmi 9A  4/64",
+      "price": 18000,
+      "currency": "CUP",
+      "category": "Telefonos",
+      "condition": "usado",
+      "stock": 0,
+      "minStock": 5,
+      "description": "Telefono Usado Redmi 9A. Coje todas las redes. Viene con su cargador, su mica",
+      "images": [
+        "Imagenes/redmi9a.jpg",
+        "Imagenes/redmi9a1.jpg"
+      ],
+      "originalPrice": 23000,
+      "bulkDiscount": 10,
+      "bulkQty": 3,
+      "featured": "no",
+      "views": 0,
+      "cartAdds": 0,
+      "sales": 0,
+      "lastSaleDate": null,
+      "createdAt": "2026-04-03T01:45:13.058Z"
+    },
+    {
+      "id": "d75d1a6f-2d77-4d38-a412-b1365de86ed0",
+      "name": "Cocina de Inducción Gelect",
+      "price": 16000,
+      "currency": "",
+      "category": "Telefonos",
+      "condition": "nuevo",
+      "stock": 9,
+      "minStock": 5,
+      "description": "Cocina de Induccion potente para cocinar. Resistente a los golpes, salpicaduras",
+      "images": [
+        "Imagenes/induccion.jpg"
+      ],
+      "originalPrice": 17000,
+      "bulkDiscount": 10,
+      "bulkQty": 3,
+      "featured": "si",
+      "views": 0,
+      "cartAdds": 0,
+      "sales": 0,
+      "lastSaleDate": null,
+      "createdAt": "2026-04-03T01:47:50.559Z"
+    }
+  ],
+  "sales": [
+    {
+      "id": "d414999a-6c9f-4886-a1d8-5be9d4134690",
+      "productId": "29f4da49-8c64-405d-84a6-43d15e0c8d09",
+      "productName": "Botones para Telefono Celulares  Unanclaje/DobleAnclaje",
+      "quantity": 1,
+      "total": 150,
+      "currency": "CUP",
+      "paymentMethod": "Transferencia",
+      "date": "2026-04-07T15:26:07.474Z"
+    }
+  ],
+  "config": {
+    "storeName": "ElectroShop Pro",
+    "whatsapp": "+5354693549",
+    "facebook": "https://facebook.com/megatienda",
+    "email": "icdanger48228@gmail.com",
+    "creatorName": "Edrian Cruz Down",
+    "creatorWhatsapp": "+5350000000",
+    "creatorFacebook": "https://facebook.com/edrian",
+    "creatorEmail": "edrian@ejemplo.com",
+    "paymentMethods": [
+      "Efectivo",
+      "Transferencia",
+      "PorCambio",
+      "NorisCUP",
+      "Marco CUP"
+    ],
+    "currencies": [
+      "cup",
+      "usd",
+      "Criptomoneda",
+      "SaldoMovil",
+      "Saldo QvaPay",
+      "usdt"
+    ],
+    "adminPassword": "admin2025",
+    "supplierPassword": "provedor2025",
+    "categories": [
+      "Telefonos",
+      "Accesorios",
+      "Insumos",
+      "PiezasPC",
+      "Piezas de Motorinas Electricas",
+      "UtilesHogar"
+    ],
+    "licenseKey": "MEGA-2025-TRIAL",
+    "licenseExpiry": "2026-04-12",
+    "licenseActive": true,
+    "clientChannel": "https://www.youtube.com/@crackschematics",
+    "clientWebsite": "https://www.crackpointer.com",
+    "clientApk": "https://www.playstore.com/electroshop.apk",
+    "clientFacebook": "https://facebook.com/edrian",
+    "clientWhatsapp": "+5354693549",
+    "creatorPassword": "creator2025",
+    "avatarEmoji": "🛒",
+    "avatarMessages": "¡Ofertas hoy!|¡Bienvenido!|¡Compra ya!|¡Los mejores precios!|¡Nuevo stock!|¡No te lo pierdas!",
+    "creatorPhone": "+5350000000",
+    "creatorChannel": "",
+    "creatorCourse": "",
+    "creatorPhoto": "blob:null/bd067e40-20b8-4454-bf40-18b40cf74975",
+    "securityQuestion": "¿Nombre de tu primera mascota?",
+    "securityAnswer": "shuter",
+    "avatarImage": "",
+    "logoEmoji": "🛒",
+    "logoImage": "",
+    "imgFolder": "",
+    "ownStoreUrl": "planes.html",
+    "additionalContacts": [],
+    "projects": [],
+    "affiliateUrl": "afiliados.html",
+    "orderMessage": "",
+    "contactBgImage": "blob:null/974b99b5-9704-4fd7-8004-587e566ee8e3"
+  },
+  "suppliers": [
+    {
+      "id": "b369da4e-e8eb-43c2-88bf-58d35c7dce21",
+      "name": "Alverto",
+      "category": "Electronica",
+      "address": "4 oeste entre 15 y 16 norte. Caribe",
+      "phone": "+5354693549",
+      "email": "icdanger48228@gmail.com"
+    },
+    {
+      "id": "928b679f-531c-4e18-916c-e3c3dae64389",
+      "name": "Luis",
+      "category": "Ropa",
+      "address": "Gtmo. Guantanamo",
+      "phone": "+5321386944",
+      "email": ""
+    }
+  ],
+  "notifications": [
+    {
+      "id": "72d268a9-dcef-46e7-b001-eb25741aff52",
+      "type": "best_seller",
+      "message": "\"Botones para Telefono Celulares  Unanclaje/DobleAnclaje\" es el más vendido (1)",
+      "productId": "29f4da49-8c64-405d-84a6-43d15e0c8d09",
+      "date": "2026-04-07T22:15:50.082Z",
+      "read": false
+    },
+    {
+      "id": "94d6249c-965c-4642-adbf-c0114ffb647f",
+      "type": "best_seller",
+      "message": "\"Cargador de Motorina Eléctrica 72V/5A\" es el más vendido (1)",
+      "productId": "bfc292b0-fc78-464d-bd07-92c4a0a97ea6",
+      "date": "2026-04-06T02:02:21.881Z",
+      "read": false
+    },
+    {
+      "id": "391df1a2-d629-42ef-990a-0113303928a4",
+      "type": "best_seller",
+      "message": "\"Telefono Celular Realme Note 50  8/128\" es el más vendido (1)",
+      "productId": "d8f86129-4b55-4f9e-80c9-5a508fc8d149",
+      "date": "2026-04-06T01:49:19.145Z",
+      "read": false
+    },
+    {
+      "id": "2905f1ca-af47-4968-8639-93a9ed0e6328",
+      "type": "low_stock",
+      "message": "\"Cocina de Inducción Gelect\" tiene stock bajo (0)",
+      "productId": "d75d1a6f-2d77-4d38-a412-b1365de86ed0",
+      "date": "2026-04-06T01:49:19.145Z",
+      "read": false
+    },
+    {
+      "id": "edcccbcc-0d6c-48cf-a536-64520294682e",
+      "type": "low_stock",
+      "message": "\"Teléfono Celular Redmi 9A  4/64\" tiene stock bajo (0)",
+      "productId": "02b62680-544a-4eb8-bbbc-d2ba9ea2d0e0",
+      "date": "2026-04-06T01:49:19.145Z",
+      "read": false
+    },
+    {
+      "id": "9a06d889-a5f1-4bf7-871f-5e8503d81b52",
+      "type": "low_stock",
+      "message": "\"Fuente ATX de 850 Watt\" tiene stock bajo (1)",
+      "productId": "5e7c096e-f621-483c-b2b1-d640253225ba",
+      "date": "2026-04-06T01:49:19.145Z",
+      "read": false
+    },
+    {
+      "id": "53deeae8-fd99-4cb5-bfe2-580ca6151339",
+      "type": "low_stock",
+      "message": "\"Telefono Celular Redmi A1+  4/64\" tiene stock bajo (2)",
+      "productId": "46d15b13-4708-4b9e-846d-93a495fea945",
+      "date": "2026-04-06T01:49:19.145Z",
+      "read": false
+    },
+    {
+      "id": "b097ae76-3956-4c43-8bc0-924d3dc4b485",
+      "type": "low_stock",
+      "message": "\"Telefono Celular Realme Note 50  8/128\" tiene stock bajo (0)",
+      "productId": "d8f86129-4b55-4f9e-80c9-5a508fc8d149",
+      "date": "2026-04-06T01:49:19.145Z",
+      "read": false
+    },
+    {
+      "id": "255f680f-1274-4103-a301-c2c7fa22f1b0",
+      "type": "low_stock",
+      "message": "\"Placa de Telefono Samsung-A326U 5G\" tiene stock bajo (0)",
+      "productId": "a2ad298e-f3d5-4800-9a04-e63539fcad93",
+      "date": "2026-04-06T01:49:19.145Z",
+      "read": false
+    },
+    {
+      "id": "d6691e07-33ce-4077-8345-cdb0dfff7d56",
+      "type": "low_stock",
+      "message": "\"Cargador de Motorina Eléctrica 72V/5A\" tiene stock bajo (3)",
+      "productId": "bfc292b0-fc78-464d-bd07-92c4a0a97ea6",
+      "date": "2026-04-06T01:49:19.145Z",
+      "read": false
+    },
+    {
+      "id": "feb7a56b-fe64-471f-87aa-734be951070e",
+      "type": "low_stock",
+      "message": "\"Telefono Celular Huawei Nova 5T\" tiene stock bajo (1)",
+      "productId": "7f18565e-acf9-4b05-a992-2eb2336c143a",
+      "date": "2026-04-06T01:49:19.145Z",
+      "read": false
+    },
+    {
+      "id": "a599f75d-138a-43c4-96a9-71306a3a658e",
+      "type": "low_stock",
+      "message": "\"Motorina Electrica\" tiene stock bajo (0)",
+      "productId": "490715c2-1c0e-4169-a55a-956dc6dd30aa",
+      "date": "2026-04-06T01:49:19.145Z",
+      "read": false
+    },
+    {
+      "id": "e47b61e0-c6c1-4301-af4e-94b49db15d43",
+      "type": "license_expiry",
+      "message": "⚠️ La licencia expira en 6 días. Contacte al creador: +5350000000",
+      "date": "2026-04-06T01:49:19.145Z",
+      "read": false
+    }
+  ],
+  "visits": [
+    {
+      "date": "2026-04-06",
+      "hour": 7,
+      "count": 2
+    },
+    {
+      "date": "2026-04-06",
+      "hour": 15,
+      "count": 1
+    },
+    {
+      "date": "2026-04-06",
+      "hour": 16,
+      "count": 3
+    },
+    {
+      "date": "2026-04-07",
+      "hour": 16,
+      "count": 1
+    },
+    {
+      "date": "2026-04-07",
+      "hour": 17,
+      "count": 2
+    },
+    {
+      "date": "2026-04-07",
+      "hour": 0,
+      "count": 2
+    }
+  ]
+}
